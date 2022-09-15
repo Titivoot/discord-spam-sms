@@ -5,7 +5,8 @@ import json, requests
 # bot class
 from bot import botInteraction
 
-GUILD_TEST = 969659996600160326
+#guild id
+GUILD_TEST = 12345
 
 class Client(Client):
     def get_interaction(self, data, *, cls=Interaction):
