@@ -18,5 +18,29 @@
             "sec-fetch-mode": "cors",
             "sec-fetch-dest": "empty"
         }
+    ],
+    "https://api.joox.com/web-fcgi-bin/web_account_manager?optype=5&os_type=2&country_code=66&phone_number=${PHONE}&time=1641777424446&_=1641777424449&callback=cybersafeiosJsonpCallback2": [
+        "GET",
+        null,
+        1,
+        null
+    ],
+    "https://nggjewellery.com/api/externals/otps/Request?mobileNo=66${PHONE}": [
+        "GET",
+        null,
+        1,
+        null
+    ],
+    "https://login.nestlemomandme.in.th/accounts.otp.sendCode": [
+        "POST",
+        "phoneNumber=%2B66${PHONE}&lang=th&APIKey=3_8ajgkPJ4o1AuV2vtbGArfixf7m-S2tJHK2Tc3sB1-iMP9I7YI0n_L4xTwSFLx-Z2&source=showScreenSet&sdk=js_latest&authMode=cookie&pageURL=https%3A%2F%2Fwww.nestlemomandme.in.th%2Fhow-to-choose-the-infant-formula%3Futm_source%3Dgoogle%26utm_medium%3Dsem%26utm_campaign%3Dcrm_sharestrategic%26utm_content%3Dpowdermilk%26gclsrc%3Daw.ds%26gclid%3DCj0KCQjwgYSTBhDKARIsAB8KukuSTJ7JYft4DbeFRvlYcV7SbOyD-OtV0jbF5QC5TXgc8ZkopeyAeawaAgIgEALw_wcB&sdkBuild=12978&format=json",
+        1,
+        {"User-Agent":"Mozilla/5.0 (Linux; Android 10; M2006C3LG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36","Content-Type":"application/x-www-form-urlencoded","Cookie":"_gcl_aw=GCL.1650610101.Cj0KCQjwgYSTBhDKARIsAB8KukuSTJ7JYft4DbeFRvlYcV7SbOyD-OtV0jbF5QC5TXgc8ZkopeyAeawaAgIgEALw_wcB; _gcl_dc=GCL.1650610101.Cj0KCQjwgYSTBhDKARIsAB8KukuSTJ7JYft4DbeFRvlYcV7SbOyD-OtV0jbF5QC5TXgc8ZkopeyAeawaAgIgEALw_wcB; _gcl_au=1.1.1679298569.1650610101; _ga=GA1.3.1187314259.1650610103; _gid=GA1.3.1182037977.1650610103; _gat=1; _gac_UA-62774158-1=1.1650610103.Cj0KCQjwgYSTBhDKARIsAB8KukuSTJ7JYft4DbeFRvlYcV7SbOyD-OtV0jbF5QC5TXgc8ZkopeyAeawaAgIgEALw_wcB; _gat_rolloutTracker=1; _gac_UA-27534376-1=1.1650610103.Cj0KCQjwgYSTBhDKARIsAB8KukuSTJ7JYft4DbeFRvlYcV7SbOyD-OtV0jbF5QC5TXgc8ZkopeyAeawaAgIgEALw_wcB; _gat_globalTracker=1; _fbp=fb.2.1650610103502.1450809075; gmid=gmid.ver4.AcbHDZedHQ.JStnB_OFn-0cd0h3rAg00LM8zCSFXOAs-ARzCvqF1mcFkF6ys79Mhd3WpK7K219k.ESi9LStLX0S91fpSZXIGfyOiGsqGshUQQMbfNAio2bom_QBNiK-KHXY1cbvpGSfD5odNxG2ZFcH-m0o5_DkC_g.sc3; ucid=7zSoNM0nnPwcdK0bFGmgaQ; hasGmid=ver4; gig_bootstrap_3_8ajgkPJ4o1AuV2vtbGArfixf7m-S2tJHK2Tc3sB1-iMP9I7YI0n_L4xTwSFLx-Z2=login_ver4; _gac_UA-59112152-1=1.1650610157.Cj0KCQjwgYSTBhDKARIsAB8KukuSTJ7JYft4DbeFRvlYcV7SbOyD-OtV0jbF5QC5TXgc8ZkopeyAeawaAgIgEALw_wcB; _gat_UA-59112152-1=1"}
+    ],
+    "https://api.ulive.youpik.com/api-base/sms/sendCode": [
+        "POST",
+        "phone=${PHONE}&type=1",
+        1,
+        {"content-type":"application/x-www-form-urlencoded;charset=UTF-8","user-agent":"Mozilla/5.0 (Linux; Android 10; M2006C3LG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36"}
     ]
 }
