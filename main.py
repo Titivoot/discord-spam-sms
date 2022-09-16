@@ -39,11 +39,12 @@ async def sms(interaction: Interaction,
     for num in range(0, roundNum):
         for api in apis:
             # url
-            if api["removeZero"]:
-                url = api["url"].format(phone=phoneNum[1:])
-            else:
-                url = api["url"].format(phone=phoneNum)
-
+            if str(api["url"]) in "{phone}":
+                if api["removeZero"]:
+                    url = api["url"].format(phone=phoneNum[1:])
+                else:
+                    url = api["url"].format(phone=phoneNum)
+            else: url = api["url"]
             #headers
             if api["headers"] == None:
                 headers = {
@@ -58,25 +59,28 @@ async def sms(interaction: Interaction,
                 if type(requestData) is dict:
                     for key in requestData.keys():
                         for value in requestData.values():
-                            if api["removeZero"]:
-                                requestData[key] = value.format(phone=phoneNum[1:])
-                            else:
-                                requestData[key] = value.format(phone=phoneNum)
+                            if str(value) in "{phone}":
+                                if api["removeZero"]:
+                                    requestData[key] = value.format(phone=phoneNum[1:])
+                                else:
+                                    requestData[key] = value.format(phone=phoneNum)
                 else:
-                    if api["removeZero"]:
-                        requestData = requestData.format(phone=phoneNum[1:])
-                    else:
-                        requestData = requestData.format(phone=phoneNum)
+                    if str(requestData) in "{phone}":
+                        if api["removeZero"]:
+                            requestData = requestData.format(phone=phoneNum[1:])
+                        else:
+                            requestData = requestData.format(phone=phoneNum)
 
             #json
             jsonData = api["json"]
             if jsonData != None:
                 for key in jsonData.keys():
                     for value in jsonData.values():
-                        if api["removeZero"]:
-                            jsonData[key] = value.format(phone=phoneNum[1:])
-                        else:
-                            jsonData[key] = value.format(phone=phoneNum)
+                        if str(value) in "{phone}":
+                            if api["removeZero"]:
+                                jsonData[key] = value.format(phone=phoneNum[1:])
+                            else:
+                                jsonData[key] = value.format(phone=phoneNum)
 
             # send req
             try:
