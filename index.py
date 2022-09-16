@@ -29,8 +29,19 @@ async def sms(
     embed.add_field(name="สถานะ", value="รอการทำงาน", inline=True)
     sendMsg = await interaction.send(embed=embed)
 
-    # start spam sms
+    # data.json type
+    # ${PHONE} = phone number example: 0661235926
+    # ${PHONE[1:]} = phone number remove zero example: 661235926
+    #
+    #
+    # "URL": [ request url example: "www.example.com/${PHONE}"
+    #    "METHOD", request method example: GET,POST
+    #    DATA, request data example: "phone=${PHONE}", {"phone": "${PHONE}"}, null
+    #    RETRY,  request round example: 1, null = (default: 1)
+    #    HEADERS, request headers example: {"user-agent":"blabla"}, null
+    #],
     urls = json.load(open("data.json"))
+
     count = 0
     done = 0
     fail = 0
