@@ -1,5 +1,4 @@
-from nextcord import Client, Interaction, SlashOption, Embed
-from nextcord.ext import commands
+from nextcord import Client, Interaction, SlashOption
 import json, requests
 
 # bot class
